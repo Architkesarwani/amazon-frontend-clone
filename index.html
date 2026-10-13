@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone - HTML & CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <a class="logo" href="#top" aria-label="Amazon home">
+      <span>amazon</span><b>⌣</b>
+    </a>
+
+    <a class="location" href="#location">
+      <span class="tiny">Deliver to</span>
+      <strong>India ▾</strong>
+    </a>
+
+    <form class="search" action="#search-results">
+      <select aria-label="Search category">
+        <option>All</option>
+        <option>Fashion</option>
+        <option>Electronics</option>
+        <option>Beauty</option>
+        <option>Home</option>
+      </select>
+      <input type="search" placeholder="Search Amazon" aria-label="Search Amazon">
+      <button type="submit" title="Search">⌕</button>
+    </form>
+
+    <details class="mini-menu language">
+      <summary>🌐 EN ▾</summary>
+      <div class="dropdown small-drop">
+        <a href="#english">English</a>
+        <a href="#hindi">हिन्दी</a>
+        <a href="#tamil">தமிழ்</a>
+      </div>
+    </details>
+
+    <details class="mini-menu account">
+      <summary><span>Hello, sign in</span><strong>Account & Lists ▾</strong></summary>
+      <div class="dropdown">
+        <h4>Welcome</h4>
+        <a class="yellow-btn" href="#signin">Sign in securely</a>
+        <a href="#account">Your Account</a>
+        <a href="#orders">Your Orders</a>
+      </div>
+    </details>
+
+    <a class="orders" href="#orders"><span>Returns</span><strong>& Orders</strong></a>
+    <a class="cart" href="#cart">🛒 <strong>Cart</strong></a>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-bar">
+    <details class="all-menu">
+      <summary>☰ <strong>All</strong></summary>
+      <div class="mega-menu">
+        <h3>Shop by Department</h3>
+        <a href="#electronics">Electronics</a>
+        <a href="#fashion">Fashion</a>
+        <a href="#beauty">Beauty</a>
+        <a href="#home">Home & Furniture</a>
+        <a href="#pets">Pet Supplies</a>
+      </div>
+    </details>
+    <a href="#deals">Today's Deals</a>
+    <a href="#service">Customer Service</a>
+    <a href="#registry">Registry</a>
+    <a href="#giftcards">Gift Cards</a>
+    <a href="#sell">Sell</a>
+    <a class="nav-right" href="#electronics">Shop deals in Electronics</a>
+  </nav>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" aria-label="Featured deals">
+      <a class="hero-arrow left" href="#hero-slide-2">‹</a>
+      <div class="hero-copy">
+        <p class="eyebrow">AMAZON SHOPPING DAYS</p>
+        <h1>Find great products<br>for every kind of shopper</h1>
+        <p>Explore fashion, electronics, beauty, home and more.</p>
+        <a class="hero-btn" href="#deals">Shop today's deals</a>
+      </div>
+      <div class="hero-images">
+        <img src="phone.jpg" alt="Smartphone">
+        <img src="fashion.jpg" alt="Fashion">
+        <img src="beauty.jpg" alt="Beauty products">
+      </div>
+      <a class="hero-arrow right" href="#deals">›</a>
+    </section>
+
+    <div class="notice">
+      You are on a demo Amazon-style website. Explore the categories below and use the navigation buttons to move around the page.
+    </div>
+
+    <!-- DEAL CARDS -->
+    <section class="card-row" id="deals">
+      <article class="deal-card" id="fashion">
+        <h2>Shop deals in Fashion</h2>
+        <div class="mini-grid">
+          <a href="#fashion"><img src="fashion.jpg" alt="Fashion"><span>Top fashion picks</span></a>
+          <a href="#fashion"><img src="furniture.jpg" alt="Clothing"><span>Style for less</span></a>
+          <a href="#fashion"><img src="beauty.jpg" alt="Accessories"><span>Accessories</span></a>
+          <a href="#fashion"><img src="pets.jpg" alt="Lifestyle"><span>New arrivals</span></a>
+        </div>
+        <a class="card-link" href="#fashion">See more</a>
+      </article>
+
+      <article class="deal-card">
+        <h2>Top Deal</h2>
+        <a class="big-product" href="#electronics">
+          <img src="phone.jpg" alt="Premium smartphone">
+          <span class="deal-badge">Up to 60% off</span>
+          <strong>Premium smartphone & accessories</strong>
+        </a>
+        <a class="card-link" href="#electronics">Shop now</a>
+      </article>
+
+      <article class="deal-card" id="electronics">
+        <h2>Gaming & Electronics</h2>
+        <div class="mini-grid">
+          <a href="#electronics"><img src="phone.jpg" alt="Phone"><span>Smartphones</span></a>
+          <a href="#electronics"><img src="beauty.jpg" alt="Accessories"><span>Accessories</span></a>
+          <a href="#electronics"><img src="furniture.jpg" alt="Desk setup"><span>Desk setup</span></a>
+          <a href="#electronics"><img src="phone.jpg" alt="Devices"><span>New devices</span></a>
+        </div>
+        <a class="card-link" href="#electronics">See more</a>
+      </article>
+
+      <article class="deal-card" id="home">
+        <h2>Home & Furniture</h2>
+        <a class="big-product" href="#home">
+          <img src="furniture.jpg" alt="Home furniture">
+          <strong>Upgrade your home space</strong>
+        </a>
+        <a class="card-link" href="#home">Shop home products</a>
+      </article>
+    </section>
+
+    <!-- CATEGORY GRID -->
+    <section class="section-title">
+      <h2>Explore popular categories</h2>
+      <a href="#top">Back to top ↑</a>
+    </section>
+
+    <section class="category-grid">
+      <article class="category-card">
+        <h2>Home products</h2>
+        <img src="furniture.jpg" alt="Home products">
+        <a href="#home">Shop now</a>
+      </article>
+      <article class="category-card" id="beauty">
+        <h2>Beauty picks</h2>
+        <img src="beauty.jpg" alt="Beauty products">
+        <a href="#beauty">Shop now</a>
+      </article>
+      <article class="category-card" id="pets">
+        <h2>Pet supplies</h2>
+        <img src="pets.jpg" alt="Dog and cat">
+        <a href="#pets">See more</a>
+      </article>
+      <article class="category-card">
+        <h2>Health & Personal Care</h2>
+        <img src="health.jpg" alt="Health and personal care">
+        <a href="#health">Shop now</a>
+      </article>
+      <article class="category-card">
+        <h2>Electronics</h2>
+        <img src="phone.jpg" alt="Electronics">
+        <a href="#electronics">See more</a>
+      </article>
+      <article class="category-card">
+        <h2>Style & fashion</h2>
+        <img src="fashion.jpg" alt="Fashion">
+        <a href="#fashion">See more</a>
+      </article>
+    </section>
+
+    <!-- HORIZONTAL SCROLLING ROW -->
+    <section class="horizontal-section" id="search-results">
+      <div class="section-title">
+        <h2>Top picks for you</h2>
+        <span>Scroll left / right →</span>
+      </div>
+      <div class="scroll-shell">
+        <a class="scroll-arrow" href="#product-1">‹</a>
+        <div class="product-scroller">
+          <a class="product" id="product-1" href="#electronics"><img src="phone.jpg" alt=""><span>Premium phone</span></a>
+          <a class="product" href="#beauty"><img src="beauty.jpg" alt=""><span>Beauty essentials</span></a>
+          <a class="product" href="#pets"><img src="pets.jpg" alt=""><span>Pet favorites</span></a>
+          <a class="product" href="#home"><img src="furniture.jpg" alt=""><span>Home decor</span></a>
+          <a class="product" href="#fashion"><img src="fashion.jpg" alt=""><span>Fashion deals</span></a>
+          <a class="product" href="#health"><img src="health.jpg" alt=""><span>Personal care</span></a>
+        </div>
+        <a class="scroll-arrow" href="#product-1">›</a>
+      </div>
+    </section>
+
+    <!-- SIGN IN -->
+    <section class="signin-panel" id="signin">
+      <h2>Sign in for the best experience</h2>
+      <p>See your recommendations, orders and more.</p>
+      <a class="yellow-btn wide" href="#account">Sign in securely</a>
+      <small>New customer? <a href="#account">Start here.</a></small>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="service">
+    <a class="back-top" href="#top">Back to top</a>
+
+    <div class="footer-main">
+      <div>
+        <h3>Get to Know Us</h3>
+        <a href="#careers">Careers</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About Amazon</a>
+        <a href="#investor">Investor Relations</a>
+        <a href="#devices">Amazon Devices</a>
+        <a href="#science">Amazon Science</a>
+      </div>
+      <div>
+        <h3>Make Money with Us</h3>
+        <a href="#sell">Sell products on Amazon</a>
+        <a href="#business">Sell on Amazon Business</a>
+        <a href="#apps">Sell apps on Amazon</a>
+        <a href="#affiliate">Become an Affiliate</a>
+        <a href="#advertise">Advertise Your Products</a>
+        <a href="#hub">Self-Publish with Us</a>
+      </div>
+      <div>
+        <h3>Amazon Payment Products</h3>
+        <a href="#payment">Amazon Business Card</a>
+        <a href="#points">Shop with Points</a>
+        <a href="#balance">Reload Your Balance</a>
+        <a href="#currency">Amazon Currency Converter</a>
+      </div>
+      <div>
+        <h3>Let Us Help You</h3>
+        <a href="#covid">Amazon and COVID-19</a>
+        <a href="#account">Your Account</a>
+        <a href="#orders">Your Orders</a>
+        <a href="#shipping">Shipping Rates & Policies</a>
+        <a href="#returns">Returns & Replacements</a>
+        <a href="#help">Help</a>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <a class="footer-logo" href="#top">amazon <span>⌣</span></a>
+      <a href="#english">🌐 English</a>
+      <a href="#currency">💲 USD - U.S. Dollar</a>
+      <a href="#country">🇮🇳 India</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Amazon Music</span><span>Amazon Ads</span><span>6pm</span><span>AbeBooks</span>
+      <span>ACX</span><span>Sell on Amazon</span><span>Amazon Business</span>
+      <span>Amazon Web Services</span><span>Audible</span><span>Goodreads</span>
+    </div>
+    <p class="copyright">© 2026 Amazon-style educational clone • Built with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
